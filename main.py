@@ -22,9 +22,13 @@ class HotelRoom:
         
     # method to streamling displaying the availability
     def DisplayAvailability(self):
+        # if the room is booked
         if self.IsBooked == True:
+            # inform the user the room is booked
             print(f"The {self.RoomType} room {self.RoomNumber} is booked.\n")
+        # if the room is not booked
         else:
+            # inform the user the room is available to make a booking
             print(f"The {self.RoomType} room {self.RoomNumber} is available to book.\n")
         
         
